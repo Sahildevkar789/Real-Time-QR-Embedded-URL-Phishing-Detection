@@ -1,5 +1,7 @@
 # An Uncertainty-Aware Cascaded Framework for Real-Time QR-Embedded URL Phishing Detection Under Deployment Constraints
 
+![Research Paper Header](paper_header.png)
+
 Official implementation of the research paper: **"An Uncertainty-Aware Cascaded Framework for Real-Time QR-Embedded URL Phishing Detection Under Deployment Constraints"**
 
 [![Expo](https://img.shields.io/badge/Expo-000000?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
