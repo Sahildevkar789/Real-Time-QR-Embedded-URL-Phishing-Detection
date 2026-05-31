@@ -34,6 +34,10 @@ Official implementation of the research paper: **"An Uncertainty-Aware Cascaded 
 
 ## 🛡️ System Architecture: The 3-Tier Cascade
 
+![System Architecture](overall_architecture.png)
+
+* 📄 [Download / View System Architecture (PDF)](overall_architecture.pdf)
+
 ```mermaid
 graph TD
     A[Scanned URL] --> B[Tier-1: Lexical ML Engine]
@@ -124,5 +128,6 @@ graph TD
 ---
 
 ## 📄 Reference Research
-For detailed mathematical proof, model training protocols, and system performance evaluations, refer to the included **IEEE Research Paper** located in the root of this project:
-* 📁 [Real_Time_QR_Phishing_Detection_Paper.pdf](file:///c:/Users/Sahil/OneDrive/Desktop/QRCode/Real_Time_QR_Phishing_Detection_Paper.pdf)
+For detailed mathematical proof, model training protocols, and system performance evaluations, refer to the included documents:
+* 📁 [Real_Time_QR_Phishing_Detection_Paper.pdf](Real_Time_QR_Phishing_Detection_Paper.pdf) (Research Paper)
+* 📁 [overall_architecture.pdf](overall_architecture.pdf) (Architecture Diagram)
