@@ -36,21 +36,6 @@ Official implementation of the research paper: **"An Uncertainty-Aware Cascaded 
 
 ![System Architecture](overall_architecture.png)
 
-* 📄 [Download / View System Architecture (PDF)](overall_architecture.pdf)
-
-```mermaid
-graph TD
-    A[Scanned URL] --> B[Tier-1: Lexical ML Engine]
-    B -->|Probability < T_safe| C[RESOLVE: SAFE - 5ms]
-    B -->|Uncertain / Suspicious| D[Tier-2: Threat Intel Blacklist]
-    D -->|Match Found| E[RESOLVE: MALICIOUS - 1ms]
-    D -->|Miss| F[Tier-3: Deep Content Forensics]
-    F -->|Analyze Redirects, SSL, & HTML| G{Scoring Engine}
-    G -->|Score >= 3| H[RESOLVE: MALICIOUS]
-    G -->|Score < 3| I[RESOLVE: SAFE]
-    F -->|Connection Failed| J[RESOLVE: SAFE_UNVERIFIED]
-```
-
 ### 1. **Tier-1: Lexical Machine Learning (Fast Safe Filter)**
 * **Latency:** ~5ms
 * **Stack:** Python, XGBoost, Scikit-Learn
