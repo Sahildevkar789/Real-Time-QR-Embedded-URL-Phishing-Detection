@@ -114,7 +114,7 @@ export default function AboutScreen() {
 
         {/* DEVELOPER CARDS */}
         <Text style={styles.sectionTitle}>// ARCHITECTS</Text>
-        
+
         <TouchableOpacity style={styles.devCard} onPress={openPortfolio}>
           <View style={styles.devAvatar}>
             <Text style={{ fontSize: 16, fontWeight: "bold" }}>SG</Text>
